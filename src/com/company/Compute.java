@@ -1,4 +1,5 @@
 package com.company;
+import java.util.*;
 
 public class Compute {
 
@@ -14,9 +15,13 @@ public class Compute {
     public static int factorial(int num){
         int result = 1;
 
+        System.out.print("Factorial(" + num + "): ");
+
         if ( num == 0 ) return 1;
         else {
             for( int i = num; i >= 1; i-- ) {
+                if ( i > 1 ) System.out.print(i + "*");
+                else System.out.print(i + " = ");
                 result *= i;
             }
         }
@@ -51,15 +56,34 @@ public class Compute {
         }
     }
 
-    public static void getRandomBoys() {
+    public static String getRandomBoys() {
+
+        Random random = new Random();
         String[] randomBoys = {"Joru","Mark","Carl"};
+
+        int randomIndex = random.nextInt((randomBoys.length-1)+1);
+        return randomBoys[randomIndex];
     }
 
-    public static void getRandomGirls() {
+    public static String getRandomGirls() {
+
+        Random random = new Random();
         String[] randomGirls = {"Grace","Louise","Kathleen"};
+
+        int randomIndex = random.nextInt((randomGirls.length-1)+1);
+        return randomGirls[randomIndex];
     }
 
-    public static void getRandomRelations() {
+    public static String getRandomRelations() {
+
+        Random random = new Random();
         String[] randomRelations = {" hates "," loves "," is dating with "};
+
+        int randomIndex = random.nextInt((randomRelations.length-1)+1);
+        return randomRelations[randomIndex];
+    }
+
+    public static void getRandomRelationships(){
+        System.out.print(getRandomBoys() + getRandomRelations() + getRandomGirls() + ".");
     }
 }
