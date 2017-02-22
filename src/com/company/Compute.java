@@ -1,11 +1,13 @@
 package com.company;
 
 public class Compute {
-    
+
     static int computeSum(int num){
         int sum = 0;
 
         for( int i = 1; i <= num; i++ ) {
+            if ( i < num ) System.out.print(i + "+");
+            else System.out.print(i + " = ");
             sum += i;
         }
         return sum;
@@ -13,8 +15,6 @@ public class Compute {
 
     static int factorial(int num){
         int result = 1;
-
-        System.out.print("Factorial(" + num + "): ");
 
         if ( num == 0 ) return 1;
         else {
@@ -37,6 +37,8 @@ public class Compute {
                 n++;
             }
         }
+
+        System.out.print( num + " even numbers: ");
         for ( int i = 0; i < evenNumbers.length; i++ ) {
             System.out.print(evenNumbers[i] + " ");
         }
