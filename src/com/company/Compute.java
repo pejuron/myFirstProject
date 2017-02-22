@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Compute {
 
-    public static int computeSum(int num){
+    static int computeSum(int num){
         int sum = 0;
 
         for( int i = 1; i <= num; i++ ) {
@@ -12,7 +12,7 @@ public class Compute {
         return sum;
     }
 
-    public static int factorial(int num){
+    static int factorial(int num){
         int result = 1;
 
         System.out.print("Factorial(" + num + "): ");
@@ -28,7 +28,7 @@ public class Compute {
         return result;
     }
 
-    public static void evenGenerator(int num) {
+    static void evenGenerator(int num) {
         int n = 0;
         int[] evenNumbers = new int[num];
 
@@ -43,7 +43,7 @@ public class Compute {
         }
     }
 
-    public static void fibonacci(int num){
+    static void fibonacci(int num){
         int[] myFiboNum = new int[num];
 
         for ( int i = 0; i < myFiboNum.length; i++ ) {
@@ -56,34 +56,34 @@ public class Compute {
         }
     }
 
-    public static String getRandomBoys() {
+    private static String getRandomBoys() {
 
         Random random = new Random();
-        String[] randomBoys = {"Joru","Mark","Carl"};
+        String[] randomBoys = { "Joru","Mark","Carl", "Julleane", "Bert" };
 
         int randomIndex = random.nextInt((randomBoys.length-1)+1);
         return randomBoys[randomIndex];
     }
 
-    public static String getRandomGirls() {
+    private static String getRandomGirls() {
 
         Random random = new Random();
-        String[] randomGirls = {"Grace","Louise","Kathleen"};
+        String[] randomGirls = { "Grace","Louise","Kathleen", "Maria Ossawa", "Kathryn" };
 
         int randomIndex = random.nextInt((randomGirls.length-1)+1);
         return randomGirls[randomIndex];
     }
 
-    public static String getRandomRelations() {
+    private static String getRandomRelations() {
 
         Random random = new Random();
-        String[] randomRelations = {" hates "," loves "," is dating with "};
+        String[] randomRelations = { " hates "," loves "," is dating with ", " was having fun with "};
 
         int randomIndex = random.nextInt((randomRelations.length-1)+1);
         return randomRelations[randomIndex];
     }
 
-    public static void getRandomRelationships(){
+    static void getRandomRelationships(){
         System.out.print(getRandomBoys() + getRandomRelations() + getRandomGirls() + ".");
     }
 }
