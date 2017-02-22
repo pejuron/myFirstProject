@@ -50,4 +50,16 @@ public class Compute {
            System.out.print( myFiboNum[i] + " ");
         }
     }
+
+    public static void getRandomBoys() {
+        String[] randomBoys = {"Joru","Mark","Carl"};
+    }
+
+    public static void getRandomGirls() {
+        String[] randomGirls = {"Grace","Louise","Kathleen"};
+    }
+
+    public static void getRandomRelations() {
+        String[] randomRelations = {" hates "," loves "," is dating with "};
+    }
 }
