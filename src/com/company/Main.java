@@ -31,6 +31,6 @@ public class Main {
         Compute.fibonacci(9);
 
         System.out.println("\n\nRandom Relationships");
-        Compute.getRandomRelationships();
+        GenerateRandom.getRandomRelationships();
     }
 }
