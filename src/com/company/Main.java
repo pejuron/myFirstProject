@@ -30,7 +30,7 @@ public class Main {
         System.out.println("\n\nFibonacci:");
         Compute.fibonacci(9);
 
-        System.out.println("\n\nRandom Relationships");
+        System.out.println("\n\nRandom Relationships:");
         GenerateRandom.getRandomRelationships();
     }
 }

@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class GenerateRandom {
 
-    static String[] randomBoys = { "Joru","Mark","Carl", "Julleane", "Bert" };
-    static String[] randomGirls = { "Grace","Louise","Kathleen", "Maria Ossawa", "Kathryn" };
+    static String[] randomBoys = { "Joru", "Mark", "Carl", "Julleane", "Bert" };
+    static String[] randomGirls = { "Grace", "Louise", "Kathleen", "Maria Ossawa", "Liza" };
     static String[] randomRelations = { " hates "," loves "," is dating with ", " was having fun with "};
 
     static Random random = new Random();
