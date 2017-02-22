@@ -1,7 +1,7 @@
 package com.company;
 
 public class Compute {
-
+    
     static int computeSum(int num){
         int sum = 0;
 
